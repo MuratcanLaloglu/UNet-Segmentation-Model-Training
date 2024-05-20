@@ -131,6 +131,7 @@ The `plot_and_save_predictions` function generates and saves plots of the model'
 ## Results
 
 The best model checkpoint and training logs can be found in the specified directory. The validation loss and training loss are printed during the training process.
+plotting is done while training, and saved inside the `plot_images` folder. Look at this while training to determine when to stop the training.
 
 ## Acknowledgments
 
