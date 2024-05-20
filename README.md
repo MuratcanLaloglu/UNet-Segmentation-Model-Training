@@ -34,17 +34,23 @@ Ensure you have PyTorch installed. You can install it from the official [PyTorch
 
 ### Training the Model
 
-To train the model, run the \`main\` function:
+To train the model, run `train.py`:
 
-\`\`\`bash
-python main.py
-\`\`\`
+```bash
+python train.py
+```
 
 This will start the training process, which includes loading the dataset, performing data augmentation, training the UNet model, and saving the best model checkpoints.
+Make sure to add the files for training:
+
+.data/mask  <- for the masked images
+.data/truth <- for the original images that are not masked.
+
+Make sure these images are 1 to 1. Meaning that every image is named the same in both folders, and that they are an exact match. Failure to do this will result in a more or less useless model in the end.
 
 ### Checkpoints
 
-The training process includes saving the model checkpoints with the best validation loss. The checkpoints are saved in the file \`checkpoint.pth.tar\`.
+The training process includes saving the model checkpoints with the best validation loss. The checkpoints are saved in the file `checkpoint.pth.tar`.
 
 ## Model Architecture
 
