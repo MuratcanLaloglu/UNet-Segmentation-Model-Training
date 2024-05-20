@@ -28,15 +28,7 @@ I have also included py files on how to make the validation dataset: make_valida
 
 ## Installation
 
-To get started, clone the repository and install the required packages:
-
-\`\`\`bash
-git clone https://github.com/yourusername/unet-segmentation.git
-cd unet-segmentation
-pip install -r requirements.txt
-\`\`\`
-
-Ensure you have PyTorch installed. You can install it from the official [PyTorch website](https://pytorch.org/get-started/locally/).
+Ensure you have PyTorch installed. You can install it from the official [PyTorch website](https://pytorch.org/).
 
 ## Usage
 
