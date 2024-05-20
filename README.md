@@ -58,7 +58,8 @@ The training process includes saving the model checkpoints with the best validat
 
 The model architecture is based on the UNet structure, which is widely used for image segmentation tasks. Here is an overview of the architecture:
 
-\`\`\`python
+```python
+
 class UNet(nn.Module):
     def __init__(self, in_channels=3, out_channels=1):
         super(UNet, self).__init__()
@@ -93,7 +94,7 @@ class UNet(nn.Module):
         x = self.dconv_up1(x)
         out = torch.sigmoid(self.conv_last(x))
         return out
-\`\`\`
+```
 
 ## Dataset Preparation
 
@@ -109,7 +110,7 @@ The training process includes loading the dataset, applying transformations, and
 
 ### Loss Function
 
-\`\`\`python
+```python
 class CombinedLoss(nn.Module):
     def forward(self, inputs, targets):
         inputs = inputs.view(-1)
@@ -119,7 +120,7 @@ class CombinedLoss(nn.Module):
         intersection = (inputs * targets).sum()
         dice_loss = 1 - (2. * intersection + smooth) / (inputs.sum() + targets.sum() + smooth)
         return bce_loss + dice_loss
-\`\`\`
+```
 
 ### Training Loop
 
