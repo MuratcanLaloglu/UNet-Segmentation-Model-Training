@@ -1,7 +1,8 @@
 
 # UNet Segmentation Model Training
 
-This repository contains the code for training a UNet segmentation model using PyTorch. The model is designed to segment images with a focus on identifying specific features such as teeth and glasses. The training process includes data augmentation, custom loss functions, and model checkpointing. 
+This repository contains the code for training a UNet segmentation model using PyTorch. The model is designed to segment images with a focus on identifying specific features such as teeth and glasses. The training process includes data augmentation, custom loss functions, and model checkpointing.
+I have also included py files on how to make the validation dataset: make_validationDataset.py, save_model.py to save the model, and code to run the model, and apply the predicted masks onto images: apply_mask.py
 
 ## Table of Contents
 
@@ -51,7 +52,7 @@ This will start the training process, which includes loading the dataset, perfor
 
 ### Checkpoints
 
-The training process includes saving the model checkpoints with the best validation loss. The checkpoints are saved in the file \`v7_alpha_unet_checkpoint.pth.tar\`.
+The training process includes saving the model checkpoints with the best validation loss. The checkpoints are saved in the file \`checkpoint.pth.tar\`.
 
 ## Model Architecture
 
