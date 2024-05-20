@@ -122,11 +122,11 @@ class CombinedLoss(nn.Module):
 
 ### Training Loop
 
-The \`train_and_validate\` function handles the training and validation process, saving the best model based on validation loss.
+The `train_and_validate` function handles the training and validation process, saving the best model based on validation loss.
 
 ## Plotting Predictions
 
-The \`plot_and_save_predictions\` function generates and saves plots of the model's predictions alongside the true masks and input images. This helps in visualizing the model's performance during training.
+The `plot_and_save_predictions` function generates and saves plots of the model's predictions alongside the true masks and input images. This helps in visualizing the model's performance during training.
 
 ## Results
 
