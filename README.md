@@ -34,13 +34,13 @@ Ensure you have PyTorch installed. You can install it from the official [PyTorch
 
 ### Create the model file
 
-To create the model file, run `make_validationDataset.py`:
+To create the validation dataset pickle file, run `make_validationDataset.py`:
 
 ```bash
 python make_validationDataset.py
 ```
 
-This will create the mode file `train_val_split.pkl`.
+This will create the pickle file `train_val_split.pkl`.
 
 ### Training the Model
 
