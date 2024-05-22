@@ -32,6 +32,16 @@ Ensure you have PyTorch installed. You can install it from the official [PyTorch
 
 ## Usage
 
+### Create the model file
+
+To create the model file, run `make_validationDataset.py`:
+
+```bash
+python make_validationDataset.py
+```
+
+This will create the mode file `train_val_split.pkl`.
+
 ### Training the Model
 
 To train the model, run `train.py`:
