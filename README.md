@@ -30,7 +30,7 @@ I have also included py files on how to make the validation dataset: make_valida
 
 Ensure you have PyTorch installed. You can install it from the official [PyTorch website](https://pytorch.org/).
 
-### Usage
+## Usage
 
 ### Create the model file
 
